@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light Aqua Background */
+    color: #003366; /* Deep Ocean Blue Text */
+    background-image: url('../assets/contactbackground.jpg');
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    color: #00509e; /* Ocean Blue */
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+
+/* Card Styling */
+.card, .card2 {
+    background-color: #ffffff; /* White Background for Cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.card-title {
+    color: #0073cf; /* Ocean Accent Blue */
+    font-weight: bold;
+}
+
+.card-text {
+    color: #003366; /* Deep Ocean Blue Text */
+}
+
+.btnprimary {
+    background-color: #ffa500; /* Vibrant Orange */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btnprimary:hover {
+    background-color: #cc8400; /* Darker Orange on Hover */
+}
+
+/* Video Section */
+.video, .VID1, .VID2, .VID3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+video {
+    border: 3px solid #0073cf; /* Ocean Blue Border */
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+/* Main Introduction Section */
+main {
+    padding: 20px;
+    background-color: #e6f7ff; /* Light Blue Background */
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+main h3 {
+    text-align: center;
+    color: #00509e; /* Ocean Blue */
+    margin-bottom: 10px;
+}
+
+/* Confetti Effect */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffa500; /* Vibrant Orange */
+    animation: confetti-fall 3s infinite ease-in-out;
+}
+
+@keyframes confetti-fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(500px) rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card, .card2 {
+        width: 95%;
+    }
+
+    .video, .VID1, .VID2, .VID3 {
+        flex-direction: column;
+    }
+}
+img {
+    border: 3px solid #0073cf; /* Ocean Blue Border */
+    border-radius: 10px;
+    max-width: 90%;
+}

@@ -1,0 +1,158 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light aqua background */
+    color: #333; /* Neutral text color */
+    background-image: url('assets/contactbackground.jpg');
+}
+
+/* Admin Header Section */
+h1 {
+    text-align: center;
+    color: #0073cf; /* Ocean blue */
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #0056a3; /* Deeper ocean blue */
+    border-bottom: 2px solid #0073cf;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Profile Section */
+.admin-profile {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info p {
+    margin: 10px 0;
+}
+
+/* Buttons */
+.btn {
+    background-color: #0073cf; /* Primary button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056a3; /* Darker shade on hover */
+}
+
+.btn[onclick*="delete"] {
+    background-color: #ff4d4d; /* Red for delete actions */
+}
+
+.btn[onclick*="delete"]:hover {
+    background-color: #cc0000;
+}
+
+/* Ticket Management Section */
+.ticket-management {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-management table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.ticket-management table th,
+.ticket-management table td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.ticket-management table th {
+    background-color: #0073cf;
+    color: white;
+}
+
+.ticket-management table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Search Bar */
+.search {
+    display: flex;
+    gap: 10px;
+}
+
+.search input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.search button {
+    background-color: #0073cf;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #0056a3;
+}
+
+/* Footer */
+.admin-footer {
+    background-color: #0056a3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ticket-management {
+        padding: 15px;
+    }
+
+    .search input {
+        width: 150px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    table th, table td {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background to reflect the ocean theme */
+    color: #333;
+}
+
+h2 {
+    color: #0056a3; /* Ocean Park blue */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Booking Section Styles */
+.booking-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.booking-card {
+    background-color: #fff; /* White card background */
+    border: 2px solid #0056a3; /* Ocean Park blue border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.booking-card:hover {
+    transform: scale(1.05);
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0056a3; /* Ocean Park blue */
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #0056a3; /* Focus effect with Ocean Park blue */
+    box-shadow: 0 0 5px rgba(0, 86, 163, 0.5);
+}
+
+/* Button Styles */
+.proceed-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #ff6a00; /* Ocean Park orange */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.proceed-button:hover {
+    background-color: #e05c00; /* Darker shade of orange for hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .booking-card {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

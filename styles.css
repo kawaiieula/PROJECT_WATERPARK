@@ -1,0 +1,124 @@
+/* General Header Styling */
+header {
+  width: 100%;
+  background-color: #0073cf; /* Ocean Park Blue */
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navigation Bar */
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo Styling */
+.logo img {
+  height: 50px; /* Adjust to fit design */
+  display: block;
+}
+
+/* Menu Styling */
+.menu1 {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu1 li {
+  position: relative;
+}
+
+.menu1 a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu1 a:hover {
+  color: #ffa500; /* Vibrant Orange for Hover Effect */
+}
+
+/* Dropdown Styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #00509e; /* Darker Ocean Blue */
+  border-radius: 5px;
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #0073cf; /* Ocean Blue on Hover */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Search Bar & Login Section */
+.loginBtn {
+  background-color: #ffa500; /* Vibrant Orange */
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.loginBtn:hover {
+  background-color: #cc8400; /* Darker Orange on Hover */
+}
+
+.loginName {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar1 {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .menu1 {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      align-items: flex-start;
+  }
+
+  .menu1 a {
+      font-size: 1rem;
+  }
+}

@@ -1,0 +1,101 @@
+/* General Reset */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Page Background */
+body {
+    background: linear-gradient(135deg, #bde0fe, #caffbf);
+    color: #333;
+    padding: 20px;
+    padding-top: 85px;
+}
+
+/* Profile Container */
+.profile-container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    margin-top: 85px;
+}
+
+/* Headings */
+h2 {
+    color: #0073cf;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* User Info */
+.user-info {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.user-info p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.edit-profile-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0073cf;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background-color: #0056a3;
+}
+
+/* Purchase History */
+.purchase-history {
+    margin-top: 20px;
+}
+
+.purchase-card {
+    background: #f0f8ff;
+    border: 1px solid #cce7ff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.purchase-card h3 {
+    color: #0056a3;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.purchase-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 15px;
+    }
+
+    .purchase-card {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

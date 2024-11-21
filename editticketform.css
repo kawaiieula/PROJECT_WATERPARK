@@ -1,0 +1,89 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fbfc; /* Soft light blue background */
+    color: #333333; /* Neutral dark gray for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card Styling */
+.card {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+}
+
+.card h2 {
+    color: #0073cf; /* Ocean blue header */
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #0073cf;
+    padding-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #333333;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #555555;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Button Styling */
+.btnprimary {
+    background-color: #0073cf; /* Ocean blue */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnprimary:hover {
+    background-color: #005bb5; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+}
