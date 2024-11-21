@@ -1,0 +1,227 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4a90e2, #e94e77);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar1 .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+.navbar1 .menu1 {
+    display: flex;
+    list-style: none;
+}
+
+.navbar1 .menu1 li {
+    margin: 0 10px;
+}
+
+.navbar1 .menu1 li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar1 .menu1 li a:hover {
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+.navbar1 .search form {
+    display: flex;
+    align-items: center;
+}
+
+.navbar1 .search input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.navbar1 .search input:focus {
+    border-color: #4a90e2;
+}
+
+.navbar1 .search button {
+    padding: 8px 12px;
+    margin-left: 8px;
+    background-color: #4a90e2;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar1 .search button:hover {
+    background-color: #357ae8;
+}
+
+/* User Profile Section */
+.user-profile {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 30px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-profile h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+.profile-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.profile-info strong {
+    color: #555;
+}
+
+.profile-info .btn {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-info .btn:hover {
+    background-color: #357ae8;
+    transform: scale(1.05);
+}
+
+/* Purchase History Section */
+.purchase-history {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.purchase-history h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+.ticket-history {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.ticket-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.ticket-card:hover {
+    transform: translateY(-10px);
+}
+
+.ticket-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.ticket-details {
+    padding: 15px;
+}
+
+.ticket-details h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.ticket-details p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.ticket-details .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+/* Sign Out Section */
+.sign-out {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.sign-out .btn {
+    padding: 10px 20px;
+    background-color: #e94e77;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sign-out .btn:hover {
+    background-color: #d72d5b;
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #4a90e2;
+    font-size: 14px;
+    border-top: 2px solid #e94e77;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

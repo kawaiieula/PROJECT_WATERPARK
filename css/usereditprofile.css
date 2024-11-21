@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar1 .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar1 ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar1 ul li {
+    display: inline;
+}
+
+.navbar1 ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.navbar1 ul li a:hover {
+    color: #ddd;
+}
+
+/* Edit Profile Section */
+.edit-profile {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-profile h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.edit-profile form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.edit-profile form input[type="text"],
+.edit-profile form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.edit-profile form input[type="text"]:focus,
+.edit-profile form input[type="email"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.edit-profile .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-profile .btn:hover {
+    background-color: #45a049;
+}
+
+/* Mobile responsive styling */
+@media (max-width: 600px) {
+    .edit-profile {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .navbar1 ul {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .navbar1 ul li {
+        margin-bottom: 5px;
+    }
+}

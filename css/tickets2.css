@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General Styles */
+body{
+  background-image: url('assets/contactbackground.jpg');
+}
+
+
+/* Banner Styles */
+.banner {
+  position: relative;
+  text-align: center;
+  margin-top: 77px;
+}
+
+.banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Ticket Options Section Styles */
+.ticket-options {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+}
+
+.ticket-options h2 {
+  margin-bottom: 2rem;
+}
+
+/* Ticket Card Styles */
+.ticket-card {
+  display: inline-block;
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.ticket-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.ticket-card h3 {
+  margin: 1rem 0;
+}
+
+.ticket-card p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6a00;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff6a00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 150px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  color: #666;
+}

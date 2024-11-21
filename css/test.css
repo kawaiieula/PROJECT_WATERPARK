@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Background Container */
+.background {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(180deg, #00aaff 0%, #0088cc 100%);
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Horizontally center the card */
+    align-items: center; /* Vertically center the card */
+    overflow: hidden;
+}
+
+/* Wave Animation */
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 400%;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 100% 50% 0 0;
+    animation: wave-animation 15s infinite cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.wave:nth-child(2) {
+    bottom: -50px;
+    background: rgba(255, 255, 255, 0.6);
+    animation-duration: 20s;
+}
+
+/* Confetti Animation */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffcc00;
+    animation: fall 5s linear infinite;
+    border-radius: 50%;
+}
+
+.confetti:nth-child(3) { left: 20%; animation-duration: 6s; background-color: #00ccff; }
+.confetti:nth-child(4) { left: 40%; animation-duration: 7s; background-color: #ff66cc; }
+.confetti:nth-child(5) { left: 60%; animation-duration: 5s; background-color: #66ff66; }
+.confetti:nth-child(6) { left: 80%; animation-duration: 8s; background-color: #ff0066; }
+
+/* Keyframes for Wave Animation */
+@keyframes wave-animation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-25%) translateY(-10px); }
+    100% { transform: translateX(-50%) translateY(0) translateX(50%); }
+}
+
+/* Keyframes for Confetti Animation */
+@keyframes fall {
+    0% { transform: translateY(-100px) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(720deg); }
+}
+
+/* Card Styling */
+.card {
+    position: relative; /* Position relative to the background */
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 35px;
+    z-index: 1; /* Ensure the card stays above the waves and confetti */
+	display: inline-block;
+	width: 1500px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #0077bb;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+h3{
+	margin-bottom: 20px;
+	font-size: 32px;
+	margin-top: 30px
+}
+
+p{
+	font-size: 19px;
+	align-content:flex-start;
+	text-justify: auto;
+	
+}
+h1{
+	margin-top: 90px;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+}
+.video{
+	content: "";
+	display: flex;
+	clear: both;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+.imej1{
+	width: 33.33%;
+	float: none;
+	
+}
+.VID1{
+	float: left;
+	clear: both;
+	display: flex;
+}
+.VID2{
+	float: left;
+	clear: both;
+	display: flex;
+}
+.VID3{
+	float: left;
+	clear: both;
+	display: flex;
+}
+p1{
+	text-align: center;
+    text-justify: auto;
+    margin-left: 30px;
+}
+.btnprimary{
+	margin-top: 20px;
+	margin-left: 400px; 
+	margin-right: 400px;
+}
+.card2{
+	background-color:  #9EECFF;
+	padding: 20px;
+	border-radius: 25px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	display: inline-block;
+	
+}
+.card col-md-4 col-xl-7{
+	margin-top: 40px;
+	
+}
+

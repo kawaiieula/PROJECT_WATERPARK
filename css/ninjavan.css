@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to right, black , orange);
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 150px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 50px;
+}
+
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+	margin-top: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .copyright {
+    font-size: 16px;
+    color: #666;
+}
+
+footer .social-media {
+    display: flex;
+    align-items: center;
+	margin-left: 1500px;
+}
+
+footer .social-media span {
+    margin-right: -78px;
+	margin-bottom: 60px;
+    font-weight: bold;
+	font-size: 18px;
+    color: #333;
+}
+
+footer .social-media a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+footer .social-media a:hover {
+    color: #0077b5;
+}
+.image{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+	padding: 20px;
+	padding-right: 20px;
+}
+
+.button{
+	margin-left: 600px;
+	margin-right: 600px;
+	width: 40%;
+	font-size: 40px;
+	background-color: orange;
+	color: white;
+	display: inline-block;
+	box-sizing: border-box;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+}
+.service-feature {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+}
+
+.service-feature img {
+    margin-right: 10px; /* Space between image and text */
+}
+i.fas.fa-chevron-down {
+			color: whitesmoke; 
+			margin-left: 5px; 
+		}
+h2{
+	margin-left: 40px;
+}
+strong{
+	margin-left: 40px;
+}

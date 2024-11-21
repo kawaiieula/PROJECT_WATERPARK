@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Set the background image for the entire page */
+.background {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('assets/R.png'); /* Replace with the actual path of your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* Makes the background fixed while scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 90px;
+    z-index: 2;
+	color: #005a96; /* Ocean Park color scheme */
+}
+
+.card {
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 80px auto;
+    width: 90%;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.navbar1 {
+    width: 100%;
+    height: 75px;
+    background-color: #005a96; /* Ocean Park color scheme */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.logo img {
+    height: 60px; /* Adjust height as needed */
+    width: auto; /* Maintain the aspect ratio */
+}
+
+.navbar1 .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu1 {
+    width: 65%;
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+.menu1 li {
+    margin-left: 20px;
+}
+
+.menu1 li a {
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.menu1 li a:hover {
+    color: #E8BB3A;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.search form {
+    display: flex;
+    margin: 0;
+}
+
+.search input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-left: 100px;
+	background-color: #FFF;
+}
+
+.search input:hover {
+    border: 1px solid #72a0d4;
+}
+
+.search button {
+    padding: 10px;
+    background-color: #E8BB3A;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 19px;
+    cursor: pointer;
+    margin-right: 150px;
+}
+
+.search button:hover {
+    background-color: #ccc;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    margin-top: 30px;
+	color: #005a96;
+}
+
+p {
+    font-size: 19px;
+    text-align: left;
+	color: #333;
+}
+
+.video {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imej1 {
+    width: 33.33%;
+}
+
+.card2 {
+    background-color: #EEE;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: inline-block;
+	color: #333;
+}
+
+.VID1, .VID2, .VID3 {
+    float: left;
+    clear: both;
+    display: flex;
+}
+
+p1 {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.btnprimary {
+    margin-top: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+/* Confetti Animation */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffcc00;
+    animation: fall 5s linear infinite;
+    border-radius: 50%;
+    z-index: 4; /* Ensure confetti is in front of the card */
+}
+
+.confetti:nth-child(3) { left: 20%; animation-duration: 6s; background-color: #00ccff; }
+.confetti:nth-child(4) { left: 40%; animation-duration: 7s; background-color: #ff66cc; }
+.confetti:nth-child(5) { left: 60%; animation-duration: 5s; background-color: #66ff66; }
+.confetti:nth-child(6) { left: 80%; animation-duration: 8s; background-color: #ff0066; }
+
+/* Keyframes for Confetti Animation */
+@keyframes fall {
+    0% { transform: translateY(-100px) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(720deg); }
+}
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.dropdown:hover .dropbtn {
+    color: #CCC;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #005a96;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Admin Login Icon */
+.admin-login {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.admin-icon {
+    width: 25px; /* Set the icon size */
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.admin-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}

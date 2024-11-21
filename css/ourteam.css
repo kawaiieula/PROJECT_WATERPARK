@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 48px;
+    color: black;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333;
+}
+
+h3 {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    height: 75px;
+    background-color: #E17212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.menu1 {
+    display: flex;
+    list-style: none;
+}
+
+.menu1 li {
+    margin-left: 20px;
+}
+
+.menu1 li a {
+    font-size: 19px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu1 li a:hover {
+    color: #CCC;
+}
+
+/* Background Section */
+.background {
+    background-image: url('assets/R.png'); /* Replace with the actual background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px; /* Offset for fixed nav */
+}
+
+/* Team Section */
+.team-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 22%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 90%;
+    }
+
+    .menu1 {
+        flex-direction: column;
+    }
+
+    .menu1 li {
+        margin: 10px 0;
+    }
+}
